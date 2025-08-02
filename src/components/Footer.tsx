@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <footer className="text-center text-white">
         <div className="container pt-0">
-          <div className="flex justify-center mb-9">
+          {/* <div className="flex justify-center mb-9">
             <a href="#!" className="mr-9 text-gray-800">
               <svg
                 aria-hidden="true"
@@ -108,7 +108,7 @@ const Footer = () => {
                 ></path>
               </svg>
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div

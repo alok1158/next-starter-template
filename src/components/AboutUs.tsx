@@ -1,13 +1,16 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
   return (
     <div id="about" className="w-full h-auto md:h-screen items-center lg:flex lg:px-2">
       <div className="flex w-full justify-center lg:h-[606px]">
-        <img
+        <Image
           className="p-2 w-fit"
           src="https://www.radiustheme.com/demo/wordpress/themes/zugan/wp-content/uploads/2018/12/about1.jpg"
           alt="/"
+          height={1000}
+          width={1000}
         />
       </div>
       <div className="p-2">

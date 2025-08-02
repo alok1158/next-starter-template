@@ -18,7 +18,7 @@ const CommingSoon = () => {
               daily need online for free.
             </p>
           </div>
-          <div className="flex flex-wrap mt-10 justify-center">
+          {/* <div className="flex flex-wrap mt-10 justify-center">
             <div className="m-3">
               <a
                 href="https://www.facebook.com/QuickToolz"
@@ -55,7 +55,7 @@ const CommingSoon = () => {
                 <span className="mx-auto">Reddit</span>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

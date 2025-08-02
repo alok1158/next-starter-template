@@ -1,14 +1,24 @@
-import type { NextConfig } from "next";
+const { initOpenNextCloudflareForDev } = require("@opennextjs/cloudflare");
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  images: {
+    domains: ['99webpage.com', 'www.radiustheme.com'],
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '99webpage.com',
+        pathname: '**',
+      },
+    ],    
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
-export default nextConfig;
-
-// added by create cloudflare to enable calling `getCloudflareContext()` in `next dev`
 // 👇 Only run Cloudflare dev init in development mode
-// if (process.env.NODE_ENV === "production") {
-  const { initOpenNextCloudflareForDev } = require("@opennextjs/cloudflare");
+if (process.env.NODE_ENV === "production" && !process.env.BUILD) {
   initOpenNextCloudflareForDev();
-// }
+}
+
+module.exports = nextConfig;
