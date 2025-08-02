@@ -10,7 +10,7 @@ const nextConfig = {
         pathname: '**',
       },
       {
-        protocol: 'http',
+        protocol: 'https',
         hostname: 'www.radiustheme.com',
         pathname: '**',
       },
