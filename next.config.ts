@@ -9,6 +9,11 @@ const nextConfig = {
         hostname: '99webpage.com',
         pathname: '**',
       },
+      {
+        protocol: 'http',
+        hostname: 'www.radiustheme.com',
+        pathname: '**',
+      },
     ],    
   },
   eslint: {
