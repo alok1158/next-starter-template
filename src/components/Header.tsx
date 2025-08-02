@@ -1,14 +1,11 @@
 "use client"
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-//import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { AiOutlineCloseCircle, AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  //const pathname = usePathname();
   const handleNav = () => {
     setNav(!nav);
   };
